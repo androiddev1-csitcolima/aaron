@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false">
+        <Button 
+            android:id="@+id/provider_fine"
+            android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="@string/use_fine_provider"
+        	android:onClick="Provider_Click"/>
+        <Button 
+            android:id="@+id/go_to_map"
+            android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="@string/go_to_map"
+        	android:onClick="Go_to_Map"/>                
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label_lat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/latlon"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/label_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >   
+        
+    <com.google.android.maps.MapView
+        android:id="@+id/main_map"
+		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent"
+ 		android:enabled="true"
+ 		android:clickable="true"
+ 		android:apiKey="0ORzLoJR41JY1vWY4p3wOXtJDtWdDYjRHWpMgww"/>   	
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@layout/header"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+            
+            <ImageButton 
+                android:contentDescription="@string/button_back"
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/left" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/map_title"
+                android:textColor="#ffffff"
+                android:textSize="20.0sp" />
+            
+            <ImageButton 
+                android:contentDescription="@string/button_refresh"
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/refresh" />
+            
+             <ImageButton 
+                android:contentDescription="@string/button_settings"
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/btnRefresh"
+                android:src="@drawable/gear"/>
+
+        </RelativeLayout>
+    
+    	<ImageButton
+    	    android:contentDescription="@string/button_cajero"
+    	    android:id="@+id/btnCajero"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_marginBottom="146dp"
+    	    android:layout_marginRight="19dp"
+    	    android:src="@drawable/bank3" 
+    	    android:onClick="click_btnCajero"/>
+
+    	<ImageButton
+    	    android:contentDescription="@string/button_sucursal"
+    	    android:id="@+id/btnSucursal"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignLeft="@+id/btnCajero"
+    	    android:layout_alignTop="@+id/btnCajero"
+    	    android:layout_marginTop="62dp"
+    	    android:src="@drawable/congress3" 
+    	    android:onClick="click_btnSucursal"/>
+
+    	<ImageButton
+    	    android:contentDescription="@string/button_search_sucursal"
+    	    android:id="@+id/btnSearchSucursal"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_alignTop="@+id/btnSucursal"
+    	    android:layout_marginLeft="15dp"
+    	    android:src="@drawable/zoom" />	
+    	
+</RelativeLayout>

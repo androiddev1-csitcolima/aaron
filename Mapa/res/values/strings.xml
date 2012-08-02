@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Banregio</string>
+    <string name="menu_settings">Settings</string>    
+    <string name="address">Dirección:</string>
+    <string name="enable_gps">Habilitar GPS</string>
+    <string name="enable_gps_dialog">El proovedor de GPS no está habilitado. ¿Deseas habilitarlo?</string>
+    <string name="latlon">Latitud/Longitud:</string>
+    <string name="unknown">--Desconocido--</string>
+    <string name="not_support_gps">El proveedor de GPS no está soportado.</string>
+    <string name="not_support_network">El proveedor de red no está soportado.</string>
+    <string name="use_fine_provider">Utilizar el proveedor activo.</string>
+    <string name="use_both_providers">Ambos proveedores</string>
+    <string name="go_to_map">Ir al Mapa</string>
+    
+    <string name="map_title">Banregio Movil</string>
+    <string name="set_sucursal_icon">Sucursales</string>
+    <string name="set_cajero_icon">Cajeros</string>
+    <string name="button_cajero">Filtrar cajeros</string>
+	<string name="button_sucursal">Filtrar sucursales</string>
+	<string name="button_search_sucursal">Busqueda de sucursales</string>
+	<string name="button_settings">Configuración</string>
+	<string name="button_refresh">Actualizar</string>
+	<string name="button_back">Regresar</string>
+	
+</resources>
